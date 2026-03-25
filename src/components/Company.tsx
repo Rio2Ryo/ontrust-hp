@@ -1,5 +1,5 @@
 const details = [
-  { label: "会社名", value: "onTrust株式会社" },
+  { label: "会社名", value: "株式会社onTrust" },
   { label: "代表取締役", value: "松浦　亮介" },
   { label: "所在地", value: "〒550-0014　大阪府大阪市西区北堀江１丁目１番２７号８Ｈ" },
   { label: "事業内容", value: "信頼スコアエンジンの開発・提供、AIアプリケーション開発" },
