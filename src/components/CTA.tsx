@@ -57,15 +57,15 @@ const technologies = [
 
 export default function CTA() {
   return (
-    <section id="contact" className="py-24 px-6 bg-cream">
+    <section id="contact" className="py-24 px-6 bg-ink text-white">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-trust-600 text-sm font-semibold tracking-widest uppercase mb-3">Technology</p>
-          <h2 className="font-serif-jp text-4xl font-bold text-ink mb-5">
+          <p className="text-trust-400 text-sm font-semibold tracking-widest uppercase mb-3">Technology</p>
+          <h2 className="font-serif-jp text-4xl font-bold text-white mb-5">
             信頼スコアを支える、<br />
-            <span className="text-trust-600">アプリ開発技術</span>
+            <span className="text-trust-400">アプリ開発技術</span>
           </h2>
-          <p className="text-gray-500 text-lg max-w-xl mx-auto">
+          <p className="text-gray-400 text-lg max-w-xl mx-auto">
             onTrustの信頼スコアは、AIで量産されるアプリ群から生まれる行動データによって育てられる。
           </p>
         </div>
@@ -74,19 +74,19 @@ export default function CTA() {
           {technologies.map((tech, i) => (
             <div
               key={i}
-              className="bg-white border border-gray-100 rounded-2xl p-7 hover:border-trust-300 hover:shadow-md transition-all"
+              className="bg-white/5 border border-white/10 rounded-2xl p-7 hover:border-trust-400/50 transition-all"
             >
-              <div className="w-9 h-9 rounded-lg bg-trust-100 flex items-center justify-center text-trust-600 mb-4">
+              <div className="w-9 h-9 rounded-lg bg-trust-500/15 border border-trust-400/20 flex items-center justify-center text-trust-300 mb-4">
                 {tech.icon}
               </div>
-              <h3 className="font-semibold text-ink text-base mb-2">{tech.title}</h3>
-              <p className="text-gray-500 text-sm leading-relaxed">{tech.desc}</p>
+              <h3 className="font-semibold text-white text-base mb-2">{tech.title}</h3>
+              <p className="text-gray-400 text-sm leading-relaxed">{tech.desc}</p>
             </div>
           ))}
         </div>
 
         {/* Partnership CTA */}
-        <div className="bg-ink rounded-3xl p-10 md:p-16 text-center text-white">
+        <div className="bg-white/5 border border-white/10 rounded-3xl p-10 md:p-16 text-center text-white">
           <p className="text-trust-400 text-sm font-semibold tracking-widest uppercase mb-4">Partnership</p>
           <h3 className="font-serif-jp text-3xl md:text-4xl font-bold mb-5">
             信頼インフラを、<br />一緒に構築しませんか。
