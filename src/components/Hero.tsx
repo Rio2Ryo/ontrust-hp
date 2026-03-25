@@ -20,18 +20,15 @@ export default function Hero() {
           <p className="inline-block text-xs font-semibold tracking-widest text-trust-600 uppercase mb-4 border border-trust-200 rounded-full px-4 py-1 ml-2">
             Relative Intelligence
           </p>
-          <h1 className="font-serif-jp text-5xl md:text-6xl font-bold text-ink leading-tight mb-6">
-            信頼は、
-            <br />
-            <span className="text-trust-600">相対的</span>だ。
+          <h1 className="font-serif-jp text-4xl md:text-5xl font-bold text-ink leading-tight mb-4">
+            嘘をつかないのは、<br />
+            <span className="text-trust-600">行動だけだ。</span>
           </h1>
+          <p className="text-gray-800 text-xl font-semibold mb-4">行動が、信頼になる。</p>
           <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-md">
-            あなたにとっての"信頼できる人"は、
-            <br className="hidden sm:block" />
-            誰かの"合わない人"かもしれない。
-            <br /><br />
-            静的情報×動的情報を組み合わせた
-            相対評価が、本当の相性を見つけます。
+            スペックでも、自己申告でもなく。<br />
+            AIアプリが積み重ねる行動データが、<br />
+            本当の相性を解き明かす。
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
