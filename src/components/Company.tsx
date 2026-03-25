@@ -9,25 +9,25 @@ const details = [
 
 export default function Company() {
   return (
-    <section id="company" className="py-24 px-6 bg-ink text-white">
+    <section id="company" className="py-24 px-6 bg-cream">
       <div className="max-w-3xl mx-auto">
         <div className="text-center mb-12">
-          <p className="text-trust-400 text-sm font-semibold tracking-widest uppercase mb-3">Company</p>
-          <h2 className="font-serif-jp text-4xl font-bold text-white">会社概要</h2>
+          <p className="text-trust-600 text-sm font-semibold tracking-widest uppercase mb-3">Company</p>
+          <h2 className="font-serif-jp text-4xl font-bold text-ink">会社概要</h2>
         </div>
 
-        <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden">
+        <div className="bg-white border border-gray-100 rounded-2xl overflow-hidden">
           {details.map((item, i) => (
             <div
               key={i}
               className={`flex flex-col sm:flex-row sm:items-start gap-2 px-8 py-5 ${
-                i !== details.length - 1 ? "border-b border-white/10" : ""
+                i !== details.length - 1 ? "border-b border-gray-100" : ""
               }`}
             >
-              <dt className="text-sm text-gray-400 sm:w-36 flex-shrink-0 font-medium">{item.label}</dt>
-              <dd className="text-sm text-white leading-relaxed">
+              <dt className="text-sm text-gray-500 sm:w-36 flex-shrink-0 font-medium">{item.label}</dt>
+              <dd className="text-sm text-ink leading-relaxed">
                 {item.label === "お問い合わせ" ? (
-                  <a href={`mailto:${item.value}`} className="text-trust-300 hover:underline">
+                  <a href={`mailto:${item.value}`} className="text-trust-600 hover:underline">
                     {item.value}
                   </a>
                 ) : (

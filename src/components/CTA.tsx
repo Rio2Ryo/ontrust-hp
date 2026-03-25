@@ -85,31 +85,6 @@ export default function CTA() {
           ))}
         </div>
 
-        {/* Partnership CTA */}
-        <div className="bg-white/5 border border-white/10 rounded-3xl p-10 md:p-16 text-center text-white">
-          <p className="text-trust-400 text-sm font-semibold tracking-widest uppercase mb-4">Partnership</p>
-          <h3 className="font-serif-jp text-3xl md:text-4xl font-bold mb-5">
-            信頼インフラを、<br />一緒に構築しませんか。
-          </h3>
-          <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-xl mx-auto">
-            正しい企業・組織と手を組み、信頼の新しい標準をともに作りたい。
-            まずはカジュアルな相談から歓迎します。
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="mailto:info@ontrust.co.jp"
-              className="bg-trust-600 hover:bg-trust-500 text-white font-semibold px-10 py-4 rounded-full transition-colors"
-            >
-              パートナーシップを相談する
-            </a>
-            <a
-              href="mailto:info@ontrust.co.jp"
-              className="border border-white/20 hover:border-trust-400 text-white font-semibold px-10 py-4 rounded-full transition-colors"
-            >
-              技術・API のお問い合わせ
-            </a>
-          </div>
-        </div>
       </div>
     </section>
   );
