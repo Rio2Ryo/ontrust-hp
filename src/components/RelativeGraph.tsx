@@ -57,26 +57,26 @@ export default function RelativeGraph() {
 
         {/* Dynamic label below: "Aから見ると" */}
         <g className="label-a">
-          <text x="200" y="202" textAnchor="middle" fill="#6366f1" fontSize="11" fontFamily="Inter, sans-serif">
+          <text x="200" y="198" textAnchor="middle" fill="#6366f1" fontSize="11" fontFamily="Inter, sans-serif">
             A から見ると
           </text>
-          <text x="200" y="224" textAnchor="middle" fill="#4f46e5" fontSize="24" fontWeight="800" fontFamily="Inter">
+          <text x="200" y="226" textAnchor="middle" fill="#4f46e5" fontSize="24" fontWeight="800" fontFamily="Inter">
             92
           </text>
-          <text x="200" y="242" textAnchor="middle" fill="#6366f1" fontSize="10">
+          <text x="200" y="247" textAnchor="middle" fill="#6366f1" fontSize="10">
             高い信頼スコア
           </text>
         </g>
 
         {/* Dynamic label below: "Cから見ると" */}
         <g className="label-c">
-          <text x="200" y="202" textAnchor="middle" fill="#e11d48" fontSize="11" fontFamily="Inter, sans-serif">
+          <text x="200" y="198" textAnchor="middle" fill="#e11d48" fontSize="11" fontFamily="Inter, sans-serif">
             C から見ると
           </text>
-          <text x="200" y="224" textAnchor="middle" fill="#e11d48" fontSize="24" fontWeight="800" fontFamily="Inter">
+          <text x="200" y="226" textAnchor="middle" fill="#e11d48" fontSize="24" fontWeight="800" fontFamily="Inter">
             31
           </text>
-          <text x="200" y="242" textAnchor="middle" fill="#e11d48" fontSize="10">
+          <text x="200" y="247" textAnchor="middle" fill="#e11d48" fontSize="10">
             低い信頼スコア
           </text>
         </g>
