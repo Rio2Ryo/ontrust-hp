@@ -53,14 +53,7 @@ export default function Footer() {
                   info@ontrust.co.jp
                 </a>
               </li>
-              <li>
-                <a href="mailto:info@ontrust.co.jp" className="hover:text-white transition-colors flex items-center gap-2">
-                  <svg className="w-4 h-4" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
-                  </svg>
-                  info@ontrust.co.jp
-                </a>
-              </li>
+
             </ul>
           </div>
         </div>
