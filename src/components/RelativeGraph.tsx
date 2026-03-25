@@ -4,7 +4,7 @@ export default function RelativeGraph() {
   return (
     <div className="w-full flex justify-center">
       <svg
-        viewBox="0 0 400 260"
+        viewBox="0 0 400 320"
         className="w-full max-w-md"
         aria-label="相対評価の可視化: 同じ人物でも見る人によってスコアが変わる"
       >
@@ -57,26 +57,26 @@ export default function RelativeGraph() {
 
         {/* Dynamic label below: "Aから見ると" */}
         <g className="label-a">
-          <text x="200" y="188" textAnchor="middle" fill="#6366f1" fontSize="11" fontFamily="Inter, sans-serif">
+          <text x="200" y="202" textAnchor="middle" fill="#6366f1" fontSize="11" fontFamily="Inter, sans-serif">
             A から見ると
           </text>
-          <text x="200" y="205" textAnchor="middle" fill="#4f46e5" fontSize="22" fontWeight="800" fontFamily="Inter">
+          <text x="200" y="224" textAnchor="middle" fill="#4f46e5" fontSize="24" fontWeight="800" fontFamily="Inter">
             92
           </text>
-          <text x="200" y="220" textAnchor="middle" fill="#6366f1" fontSize="10">
+          <text x="200" y="242" textAnchor="middle" fill="#6366f1" fontSize="10">
             高い信頼スコア
           </text>
         </g>
 
         {/* Dynamic label below: "Cから見ると" */}
         <g className="label-c">
-          <text x="200" y="188" textAnchor="middle" fill="#e11d48" fontSize="11" fontFamily="Inter, sans-serif">
+          <text x="200" y="202" textAnchor="middle" fill="#e11d48" fontSize="11" fontFamily="Inter, sans-serif">
             C から見ると
           </text>
-          <text x="200" y="205" textAnchor="middle" fill="#e11d48" fontSize="22" fontWeight="800" fontFamily="Inter">
+          <text x="200" y="224" textAnchor="middle" fill="#e11d48" fontSize="24" fontWeight="800" fontFamily="Inter">
             31
           </text>
-          <text x="200" y="220" textAnchor="middle" fill="#e11d48" fontSize="10">
+          <text x="200" y="242" textAnchor="middle" fill="#e11d48" fontSize="10">
             低い信頼スコア
           </text>
         </g>

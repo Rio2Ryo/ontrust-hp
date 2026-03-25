@@ -51,9 +51,9 @@ export default function Hero() {
 
         {/* Animated Graph */}
         <div className="flex justify-center">
-          <div className="bg-ink/5 border border-ink/10 rounded-3xl p-6 w-full max-w-sm">
+          <div className="bg-ink/5 border border-ink/10 rounded-3xl p-6 pb-8 w-full max-w-sm">
             <RelativeGraph />
-            <p className="text-center text-xs text-gray-400 mt-4 font-sans">
+            <p className="text-center text-xs text-gray-400 mt-6 font-sans">
               同じBさんでも、見る人によってスコアが変わる
             </p>
           </div>
