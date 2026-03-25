@@ -3,7 +3,7 @@ import OnTrustMark from "./OnTrustMark";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center pt-16 px-6 overflow-hidden">
+    <section id="top" className="relative min-h-screen flex flex-col items-center justify-center pt-32 md:pt-24 px-6 overflow-hidden">
       {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-trust-50/40 via-cream to-cream pointer-events-none" />
       <div className="absolute top-20 left-1/2 -translate-x-1/2 w-[600px] h-[600px] rounded-full bg-trust-100/30 blur-3xl pointer-events-none" />
@@ -32,18 +32,12 @@ export default function Hero() {
             AIアプリが積み重ねる行動データが、<br />
             本当の相性を解き明かす。
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+          <div className="flex justify-center md:justify-start">
             <a
-              href="#contact"
-              className="bg-trust-600 hover:bg-trust-700 text-white font-semibold px-8 py-4 rounded-full transition-colors text-center"
+              href="#inquiry"
+              className="bg-trust-600 hover:bg-trust-700 text-white font-semibold px-8 py-4 rounded-full transition-colors text-center min-w-[240px]"
             >
-              パートナーになる
-            </a>
-            <a
-              href="#solution"
-              className="border border-trust-300 hover:border-trust-500 text-trust-700 font-semibold px-8 py-4 rounded-full transition-colors text-center"
-            >
-              仕組みを見る
+              お問い合わせはこちら
             </a>
           </div>
         </div>
