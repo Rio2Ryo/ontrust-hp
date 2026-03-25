@@ -19,7 +19,7 @@ export default function Contact() {
     const body = encodeURIComponent(
       `お名前: ${form.name}\n会社名: ${form.company}\nメール: ${form.email}\nお問い合わせ種別: ${form.type}\n\n${form.message}`
     );
-    window.location.href = `mailto:hello@ontrust.ai?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:info@ontrust.co.jp?subject=${subject}&body=${body}`;
     setSubmitted(true);
   };
 

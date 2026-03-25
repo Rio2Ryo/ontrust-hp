@@ -97,13 +97,13 @@ export default function CTA() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="mailto:hello@ontrust.ai"
+              href="mailto:info@ontrust.co.jp"
               className="bg-trust-600 hover:bg-trust-500 text-white font-semibold px-10 py-4 rounded-full transition-colors"
             >
               パートナーシップを相談する
             </a>
             <a
-              href="mailto:api@ontrust.ai"
+              href="mailto:info@ontrust.co.jp"
               className="border border-white/20 hover:border-trust-400 text-white font-semibold px-10 py-4 rounded-full transition-colors"
             >
               技術・API のお問い合わせ
