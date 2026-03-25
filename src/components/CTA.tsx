@@ -1,62 +1,89 @@
 export default function CTA() {
-  return (
-    <section id="partnership" className="py-24 px-6 bg-ink text-white">
-      <div className="max-w-3xl mx-auto text-center">
-        <p className="text-trust-400 text-sm font-semibold tracking-widest uppercase mb-4">Partnership</p>
-        <h2 className="font-serif-jp text-4xl md:text-5xl font-bold mb-6 leading-tight">
-          信頼インフラを、<br />
-          一緒に構築しませんか。
-        </h2>
-        <p className="text-gray-400 text-lg leading-relaxed mb-10 max-w-xl mx-auto">
-          onTrustは、信頼スコアを「使うもの」として提供するのではなく、
-          パートナーとともに育てるエコシステムとして設計されています。
-          <br /><br />
-          正しい企業・組織と手を組み、信頼の新しい標準をともに作りたい。
-        </p>
+  const technologies = [
+    {
+      emoji: "🤖",
+      title: "AI駆動の高速開発",
+      desc: "最新のAIツールを活用し、従来の半分以下のコスト・期間でカスタマイズアプリを量産。アイデアを素早く形にする開発力。",
+    },
+    {
+      emoji: "📊",
+      title: "行動データ収集・分析",
+      desc: "アプリ上のあらゆるユーザー行動をリアルタイムに収集・構造化。信頼スコアの精度を支える行動データ基盤を構築。",
+    },
+    {
+      emoji: "🔗",
+      title: "スコアエンジン連携",
+      desc: "各アプリは onTrust の信頼スコアエンジンとシームレスに連携。アプリが増えるほどスコアの精度も上がるフライホイール設計。",
+    },
+    {
+      emoji: "🎨",
+      title: "UX最適化",
+      desc: "ユーザーが自然に行動データを提供したくなるUX設計。データ品質と利用継続率の両立が信頼スコアの質に直結する。",
+    },
+    {
+      emoji: "🔒",
+      title: "プライバシー・セキュリティ",
+      desc: "データの取り扱いには最高水準のプライバシー保護を実装。ユーザーの信頼があってはじめて、信頼スコアは成立する。",
+    },
+    {
+      emoji: "⚡",
+      title: "スケーラブルなインフラ",
+      desc: "アプリ数・ユーザー数が増えても安定稼働するクラウドインフラ。信頼インフラとして社会に根付くための耐久性を設計段階から実装。",
+    },
+  ];
 
-        {/* Partnership types */}
-        <div className="grid sm:grid-cols-3 gap-6 mb-12 text-left">
-          {[
-            {
-              title: "信頼スコア導入パートナー",
-              desc: "自社サービスにonTrustの信頼スコアを組み込む。採用・マッチング・取引などの精度を高める。",
-            },
-            {
-              title: "アプリ共同開発パートナー",
-              desc: "onTrustのAI開発力と信頼スコアを活用し、新しいカテゴリのアプリを共同開発する。",
-            },
-            {
-              title: "データ連携パートナー",
-              desc: "既存のデータ資産をonTrustの信頼インフラと連携し、相互に価値を高める。",
-            },
-          ].map((item, i) => (
-            <div key={i} className="bg-white/5 rounded-xl p-6 border border-white/10 hover:border-trust-500/40 transition-colors">
-              <h3 className="font-semibold mb-2 text-sm text-trust-300">{item.title}</h3>
-              <p className="text-gray-400 text-xs leading-relaxed">{item.desc}</p>
+  return (
+    <section id="contact" className="py-24 px-6 bg-cream">
+      <div className="max-w-5xl mx-auto">
+        <div className="text-center mb-16">
+          <p className="text-trust-600 text-sm font-semibold tracking-widest uppercase mb-3">Technology</p>
+          <h2 className="font-serif-jp text-4xl font-bold text-ink mb-5">
+            信頼スコアを支える、<br />
+            <span className="text-trust-600">アプリ開発技術</span>
+          </h2>
+          <p className="text-gray-500 text-lg max-w-xl mx-auto">
+            onTrustの信頼スコアは、AIで量産されるアプリ群から生まれる行動データによって育てられる。
+            それを支えるのが、私たちの開発技術力だ。
+          </p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 mb-20">
+          {technologies.map((tech, i) => (
+            <div
+              key={i}
+              className="bg-white border border-gray-100 rounded-2xl p-7 hover:border-trust-300 hover:shadow-md transition-all"
+            >
+              <div className="text-3xl mb-4">{tech.emoji}</div>
+              <h3 className="font-semibold text-ink text-base mb-2">{tech.title}</h3>
+              <p className="text-gray-500 text-sm leading-relaxed">{tech.desc}</p>
             </div>
           ))}
         </div>
 
-        <a
-          href="mailto:hello@ontrust.jp"
-          className="inline-block bg-trust-600 hover:bg-trust-500 text-white font-semibold px-10 py-4 rounded-full transition-colors text-lg"
-        >
-          パートナーシップを相談する
-        </a>
-        <p className="text-gray-600 text-sm mt-4">まずはカジュアルな相談から歓迎します</p>
-
-        {/* Metrics */}
-        <div className="grid grid-cols-3 gap-8 border-t border-white/10 pt-12 mt-12">
-          {[
-            { num: "1/2", label: "開発コスト・期間" },
-            { num: "∞", label: "カスタマイズの自由度" },
-            { num: "2軸", label: "静的 × 動的評価" },
-          ].map((m) => (
-            <div key={m.label} className="text-center">
-              <p className="font-serif-jp text-3xl font-bold text-trust-400 mb-1">{m.num}</p>
-              <p className="text-gray-500 text-xs">{m.label}</p>
-            </div>
-          ))}
+        {/* Partnership CTA */}
+        <div className="bg-ink rounded-3xl p-10 md:p-16 text-center text-white">
+          <p className="text-trust-400 text-sm font-semibold tracking-widest uppercase mb-4">Partnership</p>
+          <h3 className="font-serif-jp text-3xl md:text-4xl font-bold mb-5">
+            信頼インフラを、<br />一緒に構築しませんか。
+          </h3>
+          <p className="text-gray-400 text-base leading-relaxed mb-10 max-w-xl mx-auto">
+            正しい企業・組織と手を組み、信頼の新しい標準をともに作りたい。
+            まずはカジュアルな相談から歓迎します。
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a
+              href="mailto:hello@ontrust.ai"
+              className="bg-trust-600 hover:bg-trust-500 text-white font-semibold px-10 py-4 rounded-full transition-colors"
+            >
+              パートナーシップを相談する
+            </a>
+            <a
+              href="mailto:api@ontrust.ai"
+              className="border border-white/20 hover:border-trust-400 text-white font-semibold px-10 py-4 rounded-full transition-colors"
+            >
+              技術・API のお問い合わせ
+            </a>
+          </div>
         </div>
       </div>
     </section>
