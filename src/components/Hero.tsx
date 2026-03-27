@@ -1,5 +1,4 @@
 import RelativeGraph from "./RelativeGraph";
-import OnTrustMark from "./OnTrustMark";
 
 export default function Hero() {
   return (
@@ -25,7 +24,9 @@ export default function Hero() {
             嘘をつかないのは、<br />
             <span className="text-trust-600">行動だけだ。</span>
           </h1>
-          <OnTrustMark />
+          <div className="flex justify-center md:justify-start mb-4 -mt-1">
+            <img src="/ontrust-logo.png" alt="株式会社onTrust ロゴ" className="h-8 md:h-9 w-auto object-contain" />
+          </div>
           <p className="text-gray-800 text-xl font-semibold mb-4">行動が、信頼になる。</p>
           <p className="text-gray-600 text-lg leading-relaxed mb-8 max-w-md">
             スペックでも、自己申告でもなく。<br />

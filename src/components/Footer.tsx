@@ -4,9 +4,7 @@ export default function Footer() {
       <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-3 gap-10 mb-10">
           <div>
-            <p className="font-serif-jp font-bold text-trust-600 text-xl mb-2">
-              on<span className="text-ink">Trust</span>
-            </p>
+            <img src="/ontrust-logo.png" alt="株式会社onTrust" className="h-9 w-auto object-contain mb-3" />
             <p className="text-gray-500 text-sm leading-relaxed">
               行動が、信頼になる。<br />
               AIアプリが積み重ねる行動データで、<br />
