@@ -8,16 +8,15 @@ export default function Contact() {
     name: "",
     company: "",
     email: "",
-    type: "",
     message: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // mailto fallback
-    const subject = encodeURIComponent(`[onTrust お問い合わせ] ${form.type} - ${form.company}`);
+    const subject = encodeURIComponent(`[onTrust お問い合わせ] ${form.company || form.name}`);
     const body = encodeURIComponent(
-      `お名前: ${form.name}\n会社名: ${form.company}\nメール: ${form.email}\nお問い合わせ種別: ${form.type}\n\n${form.message}`
+      `お名前: ${form.name}\n会社名: ${form.company}\nメール: ${form.email}\n\n${form.message}`
     );
     window.location.href = `mailto:info@ontrust.co.jp?subject=${subject}&body=${body}`;
     setSubmitted(true);
@@ -90,22 +89,6 @@ export default function Contact() {
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-ink mb-1.5">お問い合わせ種別 <span className="text-red-400">*</span></label>
-              <select
-                required
-                value={form.type}
-                onChange={(e) => setForm({ ...form, type: e.target.value })}
-                className="w-full px-4 py-3 rounded-xl border border-gray-200 bg-cream text-ink text-sm focus:outline-none focus:ring-2 focus:ring-trust-300 focus:border-transparent transition"
-              >
-                <option value="">選択してください</option>
-                <option value="パートナーシップ">パートナーシップについて</option>
-                <option value="信頼スコア導入">信頼スコアの導入について</option>
-                <option value="アプリ共同開発">アプリ共同開発について</option>
-                <option value="API・技術連携">API・技術連携について</option>
-                <option value="その他">その他</option>
-              </select>
-            </div>
 
             <div>
               <label className="block text-sm font-medium text-ink mb-1.5">ご相談内容 <span className="text-red-400">*</span></label>
